@@ -1,0 +1,340 @@
+/* ========================================
+   Åsebø Bygg og Betong - Responsive Styles
+   ======================================== */
+
+/* Tablet (768px+) */
+@media (min-width: 768px) {
+    /* Typography */
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2.25rem;
+    }
+
+    /* Quick Contact Bar */
+    .quick-contact {
+        display: block;
+    }
+
+    /* Header */
+    .header-inner {
+        padding: var(--spacing-md) 0;
+    }
+
+    /* Navigation */
+    .nav-desktop {
+        display: block;
+    }
+
+    .mobile-menu-toggle {
+        display: none;
+    }
+
+    .nav-mobile {
+        display: none;
+    }
+
+    .header-cta {
+        display: block;
+    }
+
+    .header-cta .btn {
+        padding: 0.625rem 1.25rem;
+        font-size: 0.9375rem;
+    }
+
+    /* Hero */
+    .hero {
+        padding-top: 110px;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.375rem;
+    }
+
+    .hero-buttons {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .hero-contact {
+        flex-direction: row;
+        justify-content: center;
+        gap: var(--spacing-lg);
+    }
+
+    /* Services Grid */
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Benefits Grid */
+    .benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Service Area */
+    .service-area {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    /* CTA Buttons */
+    .cta-buttons {
+        flex-direction: row;
+    }
+
+    /* Footer Grid */
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Page Header */
+    .page-header {
+        padding: calc(110px + var(--spacing-xxl)) 0 var(--spacing-xxl);
+    }
+
+    /* Service Detail */
+    .service-detail-content {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .service-detail:nth-child(even) .service-detail-content {
+        direction: rtl;
+    }
+
+    .service-detail:nth-child(even) .service-detail-content > * {
+        direction: ltr;
+    }
+
+    /* About */
+    .about-intro {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* Values Grid */
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Area Details */
+    .area-details {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Projects Grid */
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Contact Grid */
+    .contact-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* Form Row */
+    .form-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--spacing-md);
+    }
+
+    .form-row .form-group {
+        margin-bottom: 0;
+    }
+}
+
+/* Desktop (1024px+) */
+@media (min-width: 1024px) {
+    /* Typography */
+    h1 {
+        font-size: 3.25rem;
+    }
+
+    /* Section */
+    .section {
+        padding: calc(var(--spacing-xxl) * 1.25) 0;
+    }
+
+    /* Header */
+    .logo-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .logo-text {
+        font-size: 1.375rem;
+    }
+
+    .nav-desktop ul {
+        gap: var(--spacing-xl);
+    }
+
+    /* Hero */
+    .hero h1 {
+        font-size: 3.5rem;
+    }
+
+    /* Services Grid */
+    .services-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--spacing-lg);
+    }
+
+    /* Benefits Grid */
+    .benefits-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Footer Grid */
+    .footer-grid {
+        grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    }
+
+    /* Values Grid */
+    .values-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* Projects Grid */
+    .projects-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Large Desktop (1200px+) */
+@media (min-width: 1200px) {
+    /* Hero */
+    .hero h1 {
+        font-size: 3.75rem;
+    }
+
+    .hero-content {
+        padding: var(--spacing-xxl) 0;
+    }
+
+    /* Service Cards */
+    .service-card {
+        padding: var(--spacing-xl);
+    }
+
+    /* Service Detail */
+    .service-detail-content {
+        gap: var(--spacing-xxl);
+    }
+
+    .service-detail-image img {
+        height: 400px;
+    }
+
+    /* About Image */
+    .about-image img {
+        height: 500px;
+    }
+
+    /* Contact Grid */
+    .contact-grid {
+        gap: var(--spacing-xxl);
+    }
+}
+
+/* Print Styles */
+@media print {
+    .header,
+    .footer,
+    .hero-shapes,
+    .mobile-menu-toggle,
+    .nav-mobile,
+    .btn,
+    .quick-contact {
+        display: none !important;
+    }
+
+    body {
+        font-size: 12pt;
+        line-height: 1.5;
+        color: #000;
+        background: #fff;
+    }
+
+    .hero {
+        background: #fff;
+        color: #000;
+        min-height: auto;
+        padding: 20pt 0;
+    }
+
+    .hero h1,
+    .hero-subtitle {
+        color: #000;
+    }
+
+    .section {
+        padding: 20pt 0;
+    }
+
+    .page-header {
+        background: #fff;
+        color: #000;
+        padding: 20pt 0;
+    }
+
+    .page-header h1,
+    .page-header p {
+        color: #000;
+    }
+
+    a {
+        color: #000;
+        text-decoration: underline;
+    }
+
+    .service-card,
+    .benefit-item,
+    .value-card,
+    .contact-info,
+    .contact-form-wrapper {
+        box-shadow: none;
+        border: 1px solid #ccc;
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* High Contrast Mode Support */
+@media (prefers-contrast: high) {
+    :root {
+        --color-border: #000;
+    }
+
+    .btn-primary {
+        border: 2px solid #000;
+    }
+
+    .service-card,
+    .benefit-item,
+    .value-card {
+        border: 2px solid #000;
+    }
+}
+
+/* Dark Mode Support (Optional - for future) */
+@media (prefers-color-scheme: dark) {
+    /* Can be enabled later if dark mode is desired */
+}
